@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#fdb7e8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .gallery-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            flex: 1 1 calc(33.333% - 32px);
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* Menjaga ukuran gambar dan memastikan tampilan sesuai */
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            border-top: 1px solid #ffffff;
+            box-sizing: border-box;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gallery-title">Koleksi Bunga-Bunga yng Cantik</div>
+        <div class="gallery">
+            <!-- Item Galeri dengan Gambar dan Caption -->
+            <div class="gallery-item">
+                <img src="bungamawarputih.png" alt="Foto 1" >
+                <div class="caption">"Bunga Mawar Berduri Bukan Untuk Melukai, Hanya Saja Untuk Melindungi Diri"</div>
+            </div>
+            <div class="gallery-item">
+                <img src="bungamatahari.png" alt="Foto 2">
+                <div class="caption">"Dia adalah bunga matahari kuat dan berani, dan setia pada dirinya sendiri."
+</div>
+            </div>
+            <div class="gallery-item">
+                <img src="bunga mawar pink .png" alt="Foto 3">
+                <div class="caption">"Mawar Tidak Pernah Menyebarkan Harumnya, Tetapi Aromanya Sendiri Menyebar ke Sekitarnya." </div>
+            </div>
+            <div class="gallery-item">
+                <img src="bunga daisy.png" alt="Foto 4">
+                <div class="caption">"Bunga Tidak Bersaing Satu Sama Lain, Mereka Hanya Berusaha Untuk Mekar Dengan indahnya Sendiri."</div>
+            </div>
+            <div class="gallery-item">
+                <img src="Bunga Sakura Cantik .png" alt="Foto 5">
+                <div class="caption">"Aku ingin bersabar seperti bunga sakura, menunggu waktu yang tepat untuk menjadi indah"</div>
+            </div>
+            <div class="gallery-item">
+                <img src="bunga tulip.png" alt="Foto 6">
+                <div class="caption">"Di Mana Pun Kehidupan Menanammu, Mekarlah Dengan Anggun."</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
